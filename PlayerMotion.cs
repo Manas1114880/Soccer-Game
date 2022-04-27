@@ -14,7 +14,7 @@ public class PlayerMotion : MonoBehaviour
 
     public Vector3 Update(){
 
-        speed = 5.0;
+        float speed = 5.0;
         float xDirection = speed*Input.GetAxis("Horizontal");
         float zDirection = speed*Input.GetAxis("Vertical");
 
