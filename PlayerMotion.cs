@@ -1,14 +1,14 @@
 
 using UnityEngine;
 using System.Collections;
-
+//This file is responsible for the players motion
 public class PlayerMotion : MonoBehaviour
 {
 
     public float speed;
 
     public Start(){
-
+      
     }
 
 
