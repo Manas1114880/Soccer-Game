@@ -9,6 +9,7 @@ public class PlayerMotion : MonoBehaviour
 
     // TODO; Need to figure what the start method does
 //I will replace this comment above with a more meaningfull response once I get waht is acctually does
+//gyedgyedgqwkgwkjhegdjkghwejk this is nothing stuff... why no change?
     public Start(){
       
     }
