@@ -7,6 +7,8 @@ public class PlayerMotion : MonoBehaviour
 
     public float speed;
 
+    // TODO; Need to figure what the start method does
+//I will replace this comment above with a more meaningfull response once I get waht is acctually does
     public Start(){
       
     }
