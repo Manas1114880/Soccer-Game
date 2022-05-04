@@ -7,14 +7,12 @@ public class PlayerMotion : MonoBehaviour
 
     public float speed;
 
-    // TODO; Need to figure what the start method does
-//I will replace this comment above with a more meaningfull response once I get waht is acctually does
-//gyedgyedgqwkgwkjhegdjkghwejk this is nothing stuff... why no change?
+    // This method is to execute your code on every single frame
     public Start(){
       
     }
 
-
+ //Executes code for every other frame
     public Vector3 Update(){
 
         float speed = 5.0;
