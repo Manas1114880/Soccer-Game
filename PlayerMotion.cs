@@ -5,6 +5,7 @@ using System.Collections;
 public class PlayerMotion : MonoBehaviour
 {
 
+    int numValue = 3;
     public float speed;
 
     // TODO; Need to figure what the start method does
