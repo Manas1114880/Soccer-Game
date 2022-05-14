@@ -5,21 +5,19 @@ using System.Collections;
 public class PlayerMotion : MonoBehaviour
 {
 
-    int numValue = 3;
     public float speed;
 
-    // TODO; Need to figure what the start method does
-//I will replace this comment above with a more meaningfull response once I get waht is acctually does
-//gyedgyedgqwkgwkjhegdjkghwejk this is nothing stuff... why no change?
-    public Start(){
+    // This method is to execute your code on every single frame
+    public void Start(){
       
     }
 
+ //Executes code for every other frame
+    public void Update(){
+      double speed = 0.5;
+      float xDirection = (float)speed*Input.GetAxis("Horizontal");
+      float zDirection = (float)speed*Input.GetAxis("Vertical");
+      this.transform.Translate(xDirection , 0.0f, zDirection);
 
-    public Vector3 Update(){
-
-       Vector3 motion = transform.Translate(1.0, 0,1.0);
-
-       return motion;
     }
 }
