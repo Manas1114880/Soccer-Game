@@ -7,21 +7,17 @@ public class PlayerMotion : MonoBehaviour
 
     public float speed;
 
-    // TODO; Need to figure what the start method does
-//I will replace this comment above with a more meaningfull response once I get waht is acctually does
-    public Start(){
+    // This method is to execute your code on every single frame
+    public void Start(){
       
     }
 
+ //Executes code for every other frame
+    public void Update(){
+      double speed = 0.5;
+      float xDirection = (float)speed*Input.GetAxis("Horizontal");
+      float zDirection = (float)speed*Input.GetAxis("Vertical");
+      this.transform.Translate(xDirection , 0.0f, zDirection);
 
-    public Vector3 Update(){
-
-        float speed = 5.0;
-        float xDirection = speed*Input.GetAxis("Horizontal");
-        float zDirection = speed*Input.GetAxis("Vertical");
-
-       Vector3 motion = transform.Translate(xDirection, 0,zDirection);
-
-       return motion;
     }
 }
