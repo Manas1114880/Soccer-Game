@@ -11,11 +11,9 @@ public class Scores : MonoBehaviour
     private void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "Goal1"){
             scoreResults.scoreIncrementation1();
-            print("I made it");
         }
         else if(other.gameObject.tag == "Goal2"){
             scoreResults.scoreIncrementation2();
-            print("The opponint team made it");
         }
     }
 }
