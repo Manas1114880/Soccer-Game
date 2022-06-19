@@ -5,25 +5,18 @@ using UnityEngine.UI;
 
 public class Scores : MonoBehaviour
 {
-    private int team1Score = 0;
-    private int team2Score = 0;
-    public Text scoreText1;
-    public Text scoreText2;
+
+    public ScoreIncrement scoreResults = new ScoreIncrement();
 
     private void OnTriggerEnter(Collider other){
         if(other.gameObject.tag == "Goal1"){
-            team1Score++;
+            scoreResults.scoreIncrementation1();
             print("I made it");
         }
         else if(other.gameObject.tag == "Goal2"){
-            team2Score++;
+            scoreResults.scoreIncrementation2();
             print("The opponint team made it");
         }
     }
-
-    void Update()
-    {
-        scoreText1.text = "Team 1 Score: " + team1Score;
-        scoreText2.text = "Team 2 Score: " + team2Score;
-    }
 }
+
